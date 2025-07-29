@@ -1,0 +1,89 @@
+---
+layout: default
+title: Alfred Jäckel - Portfolio
+---
+
+<div class="container">
+    <h1 style="text-align: left; margin-top: 4rem; color: #2c3e50; font-weight: 300; font-size: 2rem;">Alfred Jäckel - BA Computer Science</h1>
+    <h3 style="text-align: left; margin-bottom: 4rem; color: #2c3e50; font-weight: 300; font-size: 2rem;">Portfolio of Selected Work</h3>
+
+    
+    <div class="portfolio-grid">
+        {% assign sorted_projects = site.data.projects %}
+        {% for project in sorted_projects %}
+            <div class="{% if project.featured %}project-full{% else %}project-half{% endif %}">
+                {% if project.featured and project.image %}
+                    <div class="project-image">
+                        <img src="{{ project.image }}" alt="{{ project.title }}">
+                    </div>
+                {% endif %}
+                <div class="project-content">
+                    <h2>{{ project.title }}</h2>
+                    <h3>{{ project.subtitle }}</h3>
+                    <p>{{ project.description }}</p>
+                    {% if project.use_modal == false %}
+                        <a href="{{ project.page_url }}" target="_blank" rel="noopener noreferrer" class="read-more-btn"> {{ project.button_title }}</a>
+                    {% else %}
+                        <button class="read-more-btn" onclick="openModal('modal{{ forloop.index }}')">Read More</button>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>{{ site.data.about.title }}</h2>
+        <div class="about-content">
+            {{ site.data.about.description | markdownify }}
+        </div>
+        
+        <div class="contact-links">
+            <a href="mailto:{{ site.data.about.contact.email }}" class="contact-link">Email</a>
+            <a href="{{ site.data.about.contact.github }}" class="contact-link" target="_blank">GitHub</a>
+        </div>
+    </section>
+</div>
+
+<!-- Modals -->
+{% for project in site.data.projects %}
+    {% assign project_index = forloop.index %}
+    {% if project.use_modal %}
+        <div id="modal{{ forloop.index }}" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal{{ forloop.index }}')">&times;</span>
+                <h2>{{ project.title }}</h2>
+                <h3>{{ project.subtitle }}</h3>
+                
+                <div class="modal-image-gallery">
+                    <iframe id="modal{{ forloop.index }}-video" class="modal-video" 
+                            src="https://www.youtube.com/embed/{{ project.video_id }}" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                    <p id="modal{{ forloop.index }}-description" class="modal-image-description">{{ project.video_description }}</p>
+                    <div class="modal-thumbnails">
+                        <img class="modal-thumbnail active" 
+                             src="{{ project.video_thumbnail }}" 
+                             onclick="changeModalMedia('modal{{ forloop.index }}', 'https://www.youtube.com/embed/{{ project.video_id }}', '{{ project.video_description }}', this, 'video')"
+                             alt="Video">
+                        {% for image in project.images %}
+                            <img class="modal-thumbnail" 
+                                 src="{{ image.src }}" 
+                                 onclick="changeModalMedia('modal{{ project_index }}', '{{ image.src }}', '{{ image.description }}', this, 'image')"
+                                 alt="{{ image.description }}">
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                {{ project.modal_content | markdownify }}
+                
+                <div class="modal-links">
+                    <a href="{{ project.project_url }}" class="modal-link" target="_blank">{{ project.project_button_title }}</a>
+                    <a href="{{ project.github_url }}" class="modal-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}

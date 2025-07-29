@@ -1,0 +1,70 @@
+- title: "Do•Dot"
+  subtitle: "Coding IxD - Let’s Get:PHYSICAL<br/>Materializing Routines With Personal Data"
+  description: "In this project we explored data physicalisation together with product design students from the weißensee kunsthochschule berlin. My groups project Do•Dot is designed to help users with their long term procrastination."
+  image: "/assets/images/ixd1.jpg"
+  featured: true
+  use_modal: true
+  video_id: "ELjI5zZEdUI"
+  video_description: "Demo Video of Our Product"
+  video_thumbnail: "/assets/images/ixd_icon.jpg"
+  images:
+    - src: "/assets/images/ixd1.jpg"
+      description: "Picture of Final Prototype"
+    - src: "/assets/images/ixd2.jpg"
+      description: "Physical Interaction With Prototype"
+  modal_content: |
+    In this project we explored data physicalisation together with product design students from the weißensee kunsthochschule berlin. The goal of the project was to represent data from users routines in an interactive physical artifact. My groups project Do•Dot is designed to assist users with long term procrastination. 
+    
+    We made a device with three caterpillars, who when assigned a task, started crawling up over the span of a week. On reaching the top, if the task were marked completed, a butterfly would open, otherwise the caterpillar would need to be pulled back down and assigned a new subtask, creating smaller and smaller task until the hurdle is small enough for the user to get going and to work their way up to completing the main task. We used a RaspberryPi to controll the motors and run the webserver for the products app.
+
+    **Product Text:** 
+
+    As we age, we change. As we change, our routines do as well. We study more. We work more. We are busier than ever before. Procrastination has become more relevant than ever, we tend to push things until the last minute. But while we do manage to complete our responsibilities we procrastinate on things that are important to us. We have goals outside of work. We have interests outside of uni. If life stopped now, you would probably have a list of things you wanted to do. But life doesn‘t stop so let Do•Dot support you.
+
+    Do•Dot allows life to revolve around itself again. It remembers your goals, tracks your achievements, and encourages you to keep going. Do•Dot helps you get back on track no matter how long it takes. But how? In the app, you tell Do•Dot tasks you want to complete. Secondly, you select something to pursue. Do•Dot will then send out a caterpillar. The caterpillar takes seven days to reach the top. If the caterpillar is faster than you are, Do•Dot will work out a plan to beat it next time. The caterpillar is ready to crawl again.
+    Do•Dot is the truly non-judgemental friend you can confide your plans to.
+
+  project_url: "https://codingixd.mi.fu-berlin.de/letsgetphysical/"
+  project_button_title: "View on Coding IxD"
+  github_url: "https://github.com/alfredjaeckel/CodingIxD_Do"
+
+- title: "Assisting the Forecast of Postoperative Delirium by Creating a User Interface for Decision Trees"
+  subtitle: "Bachelor Thesis"
+  description: "In my Bachelor Thesis, I propose a design of a user interface for a hospital decision algorithm"
+  image: "/assets/images/ba-prototype.jpg"
+  featured: true
+  use_modal: true
+  video_id: "BdSlFxUCT6k"
+  video_description: "Video of Thesis Defence Including Project Demo"
+  video_thumbnail: "/assets/images/ba_icon.jpg"
+  images:
+    - src: "/assets/images/ba-prototype.jpg"
+      description: "Final Prototype of the User Interface"
+  modal_content: |
+    
+    **Abstract** 
+
+    After undergoing operation, postoperative delirium (POD), can occur in patients after waking up from anaesthesia or in the days following. Patients with POD are often confused and lack awareness of their surroundings [[1]](https://pubmed.ncbi.nlm.nih.gov/36233496/){:target="_blank"}. Health professionals need to asses the risk of post operative delirium to prevent putting patients at risk. Current models are fairly complex, which is why Heinrich et al. [[1]](https://pubmed.ncbi.nlm.nih.gov/36233496/){:target="_blank"} proposed Fast and Frugal Trees (FFTrees) for this purpose. These FFTrees offer the advantage of simplicity, requiring the input of at most four values, each of which could lead to a direct decision. Requiring only four intuitive inputs, the models are simple to use and easier to communicate. Although a lot simpler they offer a similar level of accuracy compared to unconstrained decision trees or multiple regression on a lot more data. In this thesis a design for a user interface, more specifically a digital checklist, for these FFTrees will be proposed. It’s purpose is to further simplify their use, ensure proper application and to support health professionals in their decision, whether further screening or other steps are necessary or not. 
+
+    1. [M. Heinrich, J. K. Woike, C. D. Spies, and O. Wegwarth. Forecasting Postoperative Delirium in Older Adult Patients with Fast-and-Frugal Decision Trees. Journal of    Clinical Medicine, 11(19):5629, Sept. 2022.](https://pubmed.ncbi.nlm.nih.gov/36233496/){:target="_blank"}
+
+
+  project_url: "assets/files/Jaeckel_BA_Thesis.pdf"
+  project_button_title: "Thesis Text"
+  github_url: "https://github.com/alfredjaeckel/BA_Prototype"
+
+- title: "Improving a Digital Patient Diary"
+  subtitle: "Human Computer Interaction - Seminar Project"
+  description: "In the seminar of the Human Computer Interaction course I took, we examined an existing user interface. We suggeested improvements, that we went on to prototype and test"
+  featured: false
+  use_modal: false
+  button_title: "Project Blog"
+  page_url: "https://blogs.fu-berlin.de/hci2023/category/projects/team1/"
+
+- title: "Coobi Cope"
+  subtitle: "Internship"
+  description: "I did a six week internship at Coobi working on their product Coobi Care. My task was development, and bug-testing. I also created an analytics dashboard, looked for usability problems and created wire framing prototypes of potential changes."
+  featured: false
+  use_modal: false
+  button_title: "Coobi Homepage"
+  page_url: "https://www.coobi.health/coobi-care"
