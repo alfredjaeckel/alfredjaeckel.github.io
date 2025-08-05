@@ -1,6 +1,6 @@
 - title: "Do•Dot"
   subtitle: "Coding IxD - Let’s Get:PHYSICAL<br/>Materializing Routines With Personal Data"
-  description: "In this project we explored data physicalisation together with product design students from the weißensee kunsthochschule berlin. My groups project Do•Dot is designed to help users with their long term procrastination."
+  description: "In this project we explored data physicalisation together with product design students from the Weißensee School of Art and Design Berlin. My group's project Do•Dot is designed to help users with their long term procrastination."
   image: "/assets/images/ixd1.jpg"
   featured: true
   use_modal: true
@@ -13,7 +13,7 @@
     - src: "/assets/images/ixd2.jpg"
       description: "Physical Interaction With Prototype"
   modal_content: |
-    In this project we explored data physicalisation together with product design students from the weißensee kunsthochschule berlin. The goal of the project was to represent data from users routines in an interactive physical artifact. My groups project Do•Dot is designed to assist users with long term procrastination. 
+    In this project we explored data physicalisation together with product design students from the Weißensee School of Art and Design Berlin. The goal of the project was to represent data from users' routines in an interactive physical artifact. My groups project Do•Dot is designed to assist users with long term procrastination. 
     
     We made a device with three caterpillars, who when assigned a task, started crawling up over the span of a week. On reaching the top, if the task were marked completed, a butterfly would open, otherwise the caterpillar would need to be pulled back down and assigned a new subtask, creating smaller and smaller task until the hurdle is small enough for the user to get going and to work their way up to completing the main task. We used a RaspberryPi to controll the motors and run the webserver for the products app.
 
@@ -53,9 +53,18 @@
   project_button_title: "Thesis Text"
   github_url: "https://github.com/alfredjaeckel/BA_Prototype"
 
+- title: "Using Gametheory to Implement an Algorithm for Nine Men's Morris"
+  subtitle: "Rust Course - Software Project"
+  description: "Early in my studies, I took a course on the Rust programming language. To apply what we had learned, we completed group software projects. We implemented a Min-Max algorithm that looks ahead in the game tree and chooses the option with the best promised outcome. We optimized our algorithm with Alpha-Beta pruning, which prevents the algorithm from going too far down unpromising branches of the tree."
+  image: "/assets/images/muehle.jpg"
+  featured: true
+  use_modal: false
+  button_title: "Github"
+  page_url: "https://github.com/Theoyor/muehle"
+
 - title: "Improving a Digital Patient Diary"
   subtitle: "Human Computer Interaction - Seminar Project"
-  description: "In the seminar of the Human Computer Interaction course I took, we examined an existing user interface. We suggeested improvements, that we went on to prototype and test"
+  description: "In the seminar of the Human Computer Interaction course I took, we examined an existing user interface. We suggested improvements, that we went on to prototype and test"
   featured: false
   use_modal: false
   button_title: "Project Blog"
